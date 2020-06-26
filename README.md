@@ -1,2 +1,2 @@
 # payment-gateway-vue
-Payment Gayeway Using Vue
+Payment Gateway Using Vue
