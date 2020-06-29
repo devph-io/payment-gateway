@@ -1,6 +1,7 @@
 # payment-gateway-vue
-Payment Gateway Using Vue
-https://github.com/devph-io/payment-gateway-vue
+Payment Gateway using ReactJS
+
+https://github.com/devph-io/payment-gateway-reactjs
 
 ## Core Team
 * Team Lead: [Narra Nasser Ressan](https://www.facebook.com/XverCLoUD.Adean) 
