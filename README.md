@@ -1,4 +1,4 @@
-# payment-gateway-reacct
+# payment-gateway-react
 
 Payment Gateway using ReactJS
 
