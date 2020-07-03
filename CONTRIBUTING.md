@@ -44,4 +44,4 @@ We've prepared guide templates for all contributors to reuse. And, we require ev
     $ git commit -m "[card_id or issue_id]: this is where you describe the commit"
     ```
     > Use the `card_id` or `issue_id` as commit prefix
-- Submit a pull request using our [tempalte]()
+- Submit a pull request using our [template](PULL_REQUEST.md)
