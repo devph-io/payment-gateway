@@ -9,7 +9,7 @@ An open-source online shopping web application using NestJs and ReactJs.
 - Front-end: [Noah](https://www.linkedin.com/in/patrick-policarpio-0446141a0/)
 - Back-end: [Haji](https://www.linkedin.com/in/hajibar-jhoneil-fernandez-010955147/)
 
-For interested contributors, check out our contributor [guidelines](https://github.com/devph-io/payment-gateway/blob/dev/CONTRIBUTING.md).
+For interested contributors, check out our contributor [guidelines](CONTRIBUTING.md).
 
 ## License
 

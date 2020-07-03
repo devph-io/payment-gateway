@@ -4,9 +4,9 @@ Contributing to `devph-io/payment-gateway` is fairly easy. This document will he
 
 We've prepared guide templates for all contributors to reuse. And, we require everyone to take some time to review and strictly abide by the following guidelines.
 
-- [Code of conduct](https://github.com/devph-io/payment-gateway/blob/dev/CODE_OF_CONDUCT.md)
-- [Issue Reporting](https://github.com/devph-io/payment-gateway/blob/dev/ISSUE_REPORTING.md)
-- [Pull Requests](https://github.com/devph-io/payment-gateway/blob/dev/PULL_REQUEST.md)
+- [Code of conduct](CODE_OF_CONDUCT.md)
+- [Issue Reporting](ISSUE_REPORTING.md)
+- [Pull Requests](PULL_REQUEST.md)
 
 ### Dependencies
 
