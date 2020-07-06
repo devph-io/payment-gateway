@@ -16,17 +16,11 @@ We've prepared guide templates for all contributors to reuse. And, we require ev
 - TypeScript (Backend)
 - Docker (Optional)
 
-### Initial installation
+### Frontend w/ ReactJs
+- check FE setup [here](./frontend/client/README.md)
 
-### Run the application
-
-### Run tests
-
-### Execute code formatter and linters
-
-### Run migrations
-
-### Execution with docker
+### Backend w/ NestJs
+- read BE setup [here](./api/README.md)
 
 ### Build and Publish
 
