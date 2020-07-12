@@ -10,16 +10,19 @@ We've prepared guide templates for all contributors to reuse. And, we require ev
 
 ### Dependencies
 
-- Node.js (comes with a bundles npm)
+- Node (comes with a bundles npm)
 - Yarn (if you prefer not to use npm)
 - Git
 - TypeScript (Backend)
 - Docker (Optional)
+- Python3
 
 ### Frontend w/ ReactJs
+
 - check FE setup [here](./frontend/client/README.md)
 
 ### Backend w/ NestJs
+
 - read BE setup [here](./api/README.md)
 
 ### Build and Publish
