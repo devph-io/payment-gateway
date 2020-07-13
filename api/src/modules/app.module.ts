@@ -9,11 +9,16 @@ import {
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { APP_INTERCEPTOR } from '@nestjs/core';
+import { PassportModule } from '@nestjs/passport';
+import { JwtModule } from '@nestjs/jwt';
 
-import { DraftModule } from './draft/draft.module';
+// Internal dependencies
+import { PublicModule } from './public/public.module';
 import * as getORMConfig from '../config/orm.config';
+import * as getJWTConfig from '../config/jwt.config';
 import { ReactionInterceptor } from '../common/interceptors/reaction.interceptor';
-import { LoggerMiddleware } from 'src/common/middlewares/logger.middleware';
+import { LoggerMiddleware } from '../common/middlewares/logger.middleware';
+import { User } from '../entities/User.entity';
 
 const shared = [
   CacheModule.register(),
@@ -25,12 +30,17 @@ const shared = [
     useFactory: (config: ConfigService) => getORMConfig(config),
     inject: [ConfigService],
   }),
-  TypeOrmModule.forFeature([]),
+  TypeOrmModule.forFeature([User]),
+  PassportModule,
+  JwtModule.registerAsync({
+    useFactory: async (config: ConfigService) => getJWTConfig(config),
+    inject: [ConfigService],
+  }),
 ];
 
 @Global()
 @Module({
-  imports: [...shared, DraftModule],
+  imports: [...shared, PublicModule],
   exports: shared,
   providers: [
     {

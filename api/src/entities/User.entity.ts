@@ -6,15 +6,15 @@ import { Base } from './Base';
  * - AddressClass follows `Provincial` address format of Philippines
  */
 class AddressClass {
-  streetName: string;
-  houseNumber: string;
-  division: string;
-  barangay: string;
-  municipality: string;
-  province: string;
-  city: string;
-  postalCode: string;
-  country: string;
+  streetName?: string;
+  houseNumber?: string;
+  division?: string;
+  barangay?: string;
+  municipality?: string;
+  province?: string;
+  city?: string;
+  postalCode?: string;
+  country?: string;
 }
 
 class Permissions {
@@ -44,6 +44,14 @@ export class User extends Base<User> {
   @Index({ unique: true, where: 'account_activation_code IS NOT NULL' })
   @Column({ name: 'account_activation_code', type: 'uuid', nullable: true })
   accountActivationCode?: string;
+
+  @Column({
+    name: 'is_confirmed',
+    type: 'boolean',
+    nullable: true,
+    default: false,
+  })
+  isConfirmed?: string;
 
   @Column({ nullable: true })
   fullname?: string;
@@ -76,4 +84,7 @@ export class User extends Base<User> {
     default: JSON.stringify(new AddressClass()),
   })
   permissions?: Permissions;
+
+  @Column({ nullable: true })
+  photo?: string;
 }
